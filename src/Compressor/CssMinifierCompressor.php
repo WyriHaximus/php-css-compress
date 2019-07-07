@@ -1,12 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace WyriHaximus\HtmlCompress\Compressor;
+namespace WyriHaximus\CssCompress\Compressor;
 
 use WebSharks\CssMinifier\Core;
+use WyriHaximus\Compress\CompressorInterface;
 
-final class CssMinifierCompressor extends Compressor
+final class CssMinifierCompressor implements CompressorInterface
 {
-    protected function execute(string $string): string
+    public function compress(string $string): string
     {
         return (string)Core::compress($string);
     }

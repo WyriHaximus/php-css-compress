@@ -1,8 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace WyriHaximus\HtmlCompress\Compressor;
+namespace WyriHaximus\CssCompress\Compressor;
 
-final class CssMinCompressor extends Compressor
+use WyriHaximus\Compress\CompressorInterface;
+
+final class CssMinCompressor implements CompressorInterface
 {
     /**
      * @var \CssMin
@@ -14,7 +16,7 @@ final class CssMinCompressor extends Compressor
         $this->cssMin = new \CssMin();
     }
 
-    protected function execute(string $string): string
+    public function compress(string $string): string
     {
         // If there's no selector, this must be an inline CSS attribute.
         if (\strpos($string, '{') === false) {
@@ -28,7 +30,7 @@ final class CssMinCompressor extends Compressor
     {
         // Get CssMin to compress inline CSS by adding and stripping a selector.
         $mock = 'body{' . $string . '}';
-        $minified = $this->execute($mock);
+        $minified = $this->compress($mock);
 
         if ($minified === '') {
             // Something went wrong, return initial input

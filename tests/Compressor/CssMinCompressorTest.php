@@ -1,8 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace WyriHaximus\HtmlCompress\Tests\Compressor;
+namespace WyriHaximus\CssCompress\Tests\Compressor;
 
-use WyriHaximus\HtmlCompress\Compressor\CssMinCompressor;
+use WyriHaximus\Compress\AbstractCompressorTest;
+use WyriHaximus\Compress\CompressorInterface;
+use WyriHaximus\CssCompress\Compressor\CssMinCompressor;
 
 /**
  * CssMinCompressorTest.
@@ -11,10 +13,8 @@ use WyriHaximus\HtmlCompress\Compressor\CssMinCompressor;
  *
  * @internal
  */
-final class CssMinCompressorTest extends AbstractVendorCompressorTest
+final class CssMinCompressorTest extends AbstractCompressorTest
 {
-    const COMPRESSOR = CssMinCompressor::class;
-
     public function providerReturn(): iterable
     {
         yield [
@@ -51,5 +51,10 @@ final class CssMinCompressorTest extends AbstractVendorCompressorTest
     {
         $actual = $this->compressor->compress($input);
         self::assertSame($expected, $actual);
+    }
+
+    protected function getCompressor(): CompressorInterface
+    {
+        return new CssMinCompressor();
     }
 }

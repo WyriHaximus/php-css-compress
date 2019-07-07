@@ -1,38 +1,19 @@
-HtmlCompress
-============
+CssCompress
+===========
 
-[![Build Status](https://travis-ci.org/WyriHaximus/HtmlCompress.png)](https://travis-ci.org/WyriHaximus/HtmlCompress)
-[![Latest Stable Version](https://poser.pugx.org/WyriHaximus/html-compress/v/stable.png)](https://packagist.org/packages/WyriHaximus/html-compress)
-[![Total Downloads](https://poser.pugx.org/WyriHaximus/html-compress/downloads.png)](https://packagist.org/packages/WyriHaximus/html-compress)
-[![Coverage Status](https://coveralls.io/repos/WyriHaximus/HtmlCompress/badge.png)](https://coveralls.io/r/WyriHaximus/HtmlCompress)
-[![License](https://poser.pugx.org/wyrihaximus/html-compress/license.png)](https://packagist.org/packages/wyrihaximus/html-compress)
+[![Build Status](https://travis-ci.org/WyriHaximus/php-css-compress.png)](https://travis-ci.org/WyriHaximus/php-css-compress)
+[![Latest Stable Version](https://poser.pugx.org/WyriHaximus/css-compress/v/stable.png)](https://packagist.org/packages/WyriHaximus/css-compress)
+[![Total Downloads](https://poser.pugx.org/WyriHaximus/css-compress/downloads.png)](https://packagist.org/packages/WyriHaximus/css-compress)
+[![Coverage Status](https://coveralls.io/repos/WyriHaximus/php-css-compress/badge.png)](https://coveralls.io/r/WyriHaximus/php-css-compress)
+[![License](https://poser.pugx.org/wyrihaximus/css-compress/license.png)](https://packagist.org/packages/wyrihaximus/css-compress)
 
 ## Installation ##
 
 To install via [Composer](http://getcomposer.org/), use the command below, it will automatically detect the latest version and bind it with `~`.
 
 ```
-composer require wyrihaximus/html-compress 
+composer require wyrihaximus/css-compress 
 ```
-
-## Basic Usage ##
-
-```php
-<?php
-
-require dirname(__DIR__) . '/vendor/autoload.php';
-
-$parser = \WyriHaximus\HtmlCompress\Factory::construct();
-$compressedHtml = $parser->compress($sourceHtml);
-```
-
-## Integration ##
-
-* [CakePHP](https://github.com/WyriHaximus/MinifyHtml)
-* [Neos CMS](https://github.com/Flownative/neos-compressor)
-* [Sculpin](https://github.com/WyriHaximus/html-compress-sculpin)
-* [Twig](https://github.com/nochso/html-compress-twig)
-* [ReactPHP HTTP Middleware](https://github.com/WyriHaximus/reactphp-http-middleware-html-compress)
 
 ## License ##
 

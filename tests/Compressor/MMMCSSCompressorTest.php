@@ -1,19 +1,18 @@
 <?php declare(strict_types=1);
-/**
- * Created by PhpStorm.
- * User: wyrihaximus
- * Date: 6/25/14
- * Time: 5:32 PM.
- */
 
-namespace WyriHaximus\HtmlCompress\Tests\Compressor;
+namespace WyriHaximus\CssCompress\Tests\Compressor;
 
-use WyriHaximus\HtmlCompress\Compressor\MMMCSSCompressor;
+use WyriHaximus\Compress\AbstractCompressorTest;
+use WyriHaximus\Compress\CompressorInterface;
+use WyriHaximus\CssCompress\Compressor\MMMCSSCompressor;
 
 /**
  * @internal
  */
-final class MMMCSSCompressorTest extends AbstractVendorCompressorTest
+final class MMMCSSCompressorTest extends AbstractCompressorTest
 {
-    const COMPRESSOR = MMMCSSCompressor::class;
+    protected function getCompressor(): CompressorInterface
+    {
+        return new MMMCSSCompressor();
+    }
 }

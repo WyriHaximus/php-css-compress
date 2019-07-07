@@ -1,23 +1,17 @@
 <?php declare(strict_types=1);
-/**
- * Created by PhpStorm.
- * User: wyrihaximus
- * Date: 6/25/14
- * Time: 5:32 PM.
- */
 
-namespace WyriHaximus\HtmlCompress\Tests\Compressor;
+namespace WyriHaximus\CssCompress\Tests\Compressor;
 
-use WyriHaximus\HtmlCompress\Compressor\YUICSSCompressor;
+use WyriHaximus\Compress\AbstractCompressorTest;
+use WyriHaximus\Compress\CompressorInterface;
+use WyriHaximus\CssCompress\Compressor\YUICSSCompressor;
 use YUI\Compressor as YUICompressor;
 
 /**
  * @internal
  */
-final class YUICSSCompressorTest extends AbstractVendorCompressorTest
+final class YUICSSCompressorTest extends AbstractCompressorTest
 {
-    const COMPRESSOR = YUICSSCompressor::class;
-
     public function testSetCorrectType(): void
     {
         $yui = (new \ReflectionClass($this->compressor))->getProperty('yui');
@@ -29,5 +23,10 @@ final class YUICSSCompressorTest extends AbstractVendorCompressorTest
         $options->setAccessible(true);
 
         self::assertSame(YUICompressor::TYPE_CSS, $options->getValue($yuiInstance)['type']);
+    }
+
+    protected function getCompressor(): CompressorInterface
+    {
+        return new YUICSSCompressor();
     }
 }

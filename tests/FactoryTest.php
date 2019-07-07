@@ -1,10 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace WyriHaximus\HtmlCompress\Tests;
+namespace WyriHaximus\CssCompress\Tests;
 
-use function Safe\file_get_contents as safeFileGetContents;
-use WyriHaximus\HtmlCompress\Factory;
-use WyriHaximus\HtmlCompress\HtmlCompressor;
+use WyriHaximus\CssCompress\Factory;
 use WyriHaximus\TestUtilities\TestCase;
 
 /**
@@ -12,28 +10,14 @@ use WyriHaximus\TestUtilities\TestCase;
  */
 final class FactoryTest extends TestCase
 {
-    public function testConstructFastest(): void
-    {
-        $compressor = Factory::constructFastest();
-        self::assertInstanceOf(HtmlCompressor::class, $compressor);
-
-        self::assertSame(
-            safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'fastest' . \DIRECTORY_SEPARATOR . 'out.html'),
-            $compressor->compress(
-                safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'fastest' . \DIRECTORY_SEPARATOR . 'in.html')
-            )
-        );
-    }
-
     public function testConstruct(): void
     {
         $compressor = Factory::construct();
-        self::assertInstanceOf(HtmlCompressor::class, $compressor);
 
         self::assertSame(
-            safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'normal' . \DIRECTORY_SEPARATOR . 'out.html'),
+            'background-color:#ffffff',
             $compressor->compress(
-                safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'normal' . \DIRECTORY_SEPARATOR . 'in.html')
+                'background-color: #ffffff;'
             )
         );
     }
@@ -41,12 +25,11 @@ final class FactoryTest extends TestCase
     public function testConstructSmallestDefault(): void
     {
         $compressor = Factory::constructSmallest();
-        self::assertInstanceOf(HtmlCompressor::class, $compressor);
 
         self::assertSame(
-            safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'smallest' . \DIRECTORY_SEPARATOR . 'out.html'),
+            'background-color:#fff;',
             $compressor->compress(
-                safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'smallest' . \DIRECTORY_SEPARATOR . 'in.html')
+                'background-color: #ffffff;'
             )
         );
     }
@@ -54,12 +37,11 @@ final class FactoryTest extends TestCase
     public function testConstructSmallestNoExternal(): void
     {
         $compressor = Factory::constructSmallest(false);
-        self::assertInstanceOf(HtmlCompressor::class, $compressor);
 
         self::assertSame(
-            safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'smallest' . \DIRECTORY_SEPARATOR . 'out.html'),
+            'background-color:#fff;',
             $compressor->compress(
-                safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'smallest' . \DIRECTORY_SEPARATOR . 'in.html')
+                'background-color: #ffffff;'
             )
         );
     }
@@ -67,12 +49,11 @@ final class FactoryTest extends TestCase
     public function testConstructSmallestExternal(): void
     {
         $compressor = Factory::constructSmallest(true);
-        self::assertInstanceOf(HtmlCompressor::class, $compressor);
 
         self::assertSame(
-            safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'smallest' . \DIRECTORY_SEPARATOR . 'out.html'),
+            'background-color:#fff;',
             $compressor->compress(
-                safeFileGetContents(__DIR__ . \DIRECTORY_SEPARATOR . 'Factory' . \DIRECTORY_SEPARATOR . 'smallest' . \DIRECTORY_SEPARATOR . 'in.html')
+                'background-color: #ffffff;'
             )
         );
     }

@@ -12,31 +12,28 @@
          "@default": true,
          "ArrayItemRemoval": {
              "ignore": [
-                 "WyriHaximus\\HtmlCompress\\Factory::construct",
-                 "WyriHaximus\\HtmlCompress\\Factory::constructSmallest"
+                 "WyriHaximus\\CssCompress\\Factory::construct",
+                 "WyriHaximus\\CssCompress\\Factory::constructSmallest"
              ]
          },
          "CastString": {
              "ignore": [
-                 "WyriHaximus\\HtmlCompress\\Compressor\\CssMinifierCompressor::execute",
-                 "WyriHaximus\\HtmlCompress\\Compressor\\JSqueezeCompressor::execute",
-                 "WyriHaximus\\HtmlCompress\\Compressor\\JSMinCompressor::execute",
-                 "WyriHaximus\\HtmlCompress\\Compressor\\JavaScriptPackerCompressor::execute"
+                 "WyriHaximus\\CssCompress\\Compressor\\CssMinifierCompressor::compress"
              ]
          },
          "Identical": {
              "ignore": [
-                 "WyriHaximus\\HtmlCompress\\Compressor\\CssMinCompressor::execute"
+                 "WyriHaximus\\CssCompress\\Compressor\\CssMinCompressor::compress"
              ]
          },
          "LogicalAnd": {
              "ignore": [
-                 "WyriHaximus\\HtmlCompress\\Compressor\\CssMinCompressor::execute"
+                 "WyriHaximus\\CssCompress\\Compressor\\CssMinCompressor::compress"
              ]
          },
          "TrueValue": {
              "ignore": [
-                 "WyriHaximus\\HtmlCompress\\Factory::constructSmallest"
+                 "WyriHaximus\\CssCompress\\Factory::constructSmallest"
              ]
          }
      }
