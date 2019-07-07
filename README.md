@@ -1,7 +1,7 @@
 CssCompress
 ===========
 
-[![Build Status](https://travis-ci.org/WyriHaximus/php-css-compress.png)](https://travis-ci.org/WyriHaximus/php-css-compress)
+[![Build Status](https://travis-ci.com/WyriHaximus/php-css-compress.png)](https://travis-ci.com/WyriHaximus/php-css-compress)
 [![Latest Stable Version](https://poser.pugx.org/WyriHaximus/css-compress/v/stable.png)](https://packagist.org/packages/WyriHaximus/css-compress)
 [![Total Downloads](https://poser.pugx.org/WyriHaximus/css-compress/downloads.png)](https://packagist.org/packages/WyriHaximus/css-compress)
 [![Coverage Status](https://coveralls.io/repos/WyriHaximus/php-css-compress/badge.png)](https://coveralls.io/r/WyriHaximus/php-css-compress)
