@@ -258,18 +258,18 @@
             "authors": [
                 {
                     "name": "websharks",
-                    "role": "company",
-                    "homepage": "http://websharks-inc.com/"
+                    "homepage": "http://websharks-inc.com/",
+                    "role": "company"
                 },
                 {
                     "name": "jaswsinc",
-                    "role": "developer",
-                    "homepage": "http://jaswsinc.com/"
+                    "homepage": "http://jaswsinc.com/",
+                    "role": "developer"
                 },
                 {
                     "name": "raamdev",
-                    "role": "developer",
-                    "homepage": "http://raam.org/"
+                    "homepage": "http://raam.org/",
+                    "role": "developer"
                 }
             ],
             "description": "Compresses CSS.",
@@ -5040,16 +5040,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.3.2",
+            "version": "v4.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "b9896d034463ad6fd2bf17e2bf9418caecd6313d"
+                "reference": "9abbb7ef96a51f4d7e69627bc6f63307994e4263"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b9896d034463ad6fd2bf17e2bf9418caecd6313d",
-                "reference": "b9896d034463ad6fd2bf17e2bf9418caecd6313d",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/9abbb7ef96a51f4d7e69627bc6f63307994e4263",
+                "reference": "9abbb7ef96a51f4d7e69627bc6f63307994e4263",
                 "shasum": ""
             },
             "require": {
@@ -5086,7 +5086,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2019-06-23T08:51:25+00:00"
+            "time": "2019-08-20T14:07:54+00:00"
         },
         {
             "name": "symfony/finder",
