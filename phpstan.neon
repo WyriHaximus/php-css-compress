@@ -1,4 +1,6 @@
 parameters:
+	ignoreErrors:
+		- '#must be rethrown#'
 	classesAllowedToBeExtended:
 		- WyriHaximus\Compress\AbstractCompressorTest
 
