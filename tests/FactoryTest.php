@@ -15,7 +15,7 @@ final class FactoryTest extends TestCase
         $compressor = Factory::construct();
 
         self::assertSame(
-            'background-color:#ffffff',
+            'background-color:#fff',
             $compressor->compress(
                 'background-color: #ffffff;'
             )
@@ -27,7 +27,7 @@ final class FactoryTest extends TestCase
         $compressor = Factory::constructSmallest();
 
         self::assertSame(
-            'background-color:#fff;',
+            'background-color:#fff',
             $compressor->compress(
                 'background-color: #ffffff;'
             )
@@ -39,7 +39,7 @@ final class FactoryTest extends TestCase
         $compressor = Factory::constructSmallest(false);
 
         self::assertSame(
-            'background-color:#fff;',
+            'background-color:#fff',
             $compressor->compress(
                 'background-color: #ffffff;'
             )
@@ -51,9 +51,21 @@ final class FactoryTest extends TestCase
         $compressor = Factory::constructSmallest(true);
 
         self::assertSame(
-            'background-color:#fff;',
+            'background-color:#fff',
             $compressor->compress(
                 'background-color: #ffffff;'
+            )
+        );
+    }
+
+    public function testConstructSmallestExternalCustomVariables(): void
+    {
+        $compressor = Factory::constructSmallest(true);
+
+        self::assertSame(
+            '--a:1em;padding:var(--a);color:blue',
+            $compressor->compress(
+                '--a: 1em;   padding: var(--a); color: blue;'
             )
         );
     }

@@ -2,19 +2,20 @@
 
 namespace WyriHaximus\CssCompress\Compressor;
 
+use tubalmartin\CssMin\Minifier as CSSmin;
 use WyriHaximus\Compress\CompressorInterface;
 use function Safe\substr;
 
 final class CssMinCompressor implements CompressorInterface
 {
     /**
-     * @var \CssMin
+     * @var CSSmin
      */
     private $cssMin;
 
     public function __construct()
     {
-        $this->cssMin = new \CssMin();
+        $this->cssMin = new CSSmin();
     }
 
     public function compress(string $string): string
@@ -24,7 +25,7 @@ final class CssMinCompressor implements CompressorInterface
             return $this->minifyInline($string);
         }
 
-        return $this->cssMin::minify($string);
+        return $this->cssMin->run($string);
     }
 
     private function minifyInline(string $string): string

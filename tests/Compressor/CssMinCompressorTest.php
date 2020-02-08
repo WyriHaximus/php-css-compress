@@ -23,22 +23,22 @@ final class CssMinCompressorTest extends AbstractCompressorTest
         ];
         yield [
             'p { background-color: #ffffff; font-size: 1px; }',
-            'p{background-color:#ffffff;font-size:1px}',
+            'p{background-color:#fff;font-size:1px}',
         ];
         yield [
             '/* comments */
             p { background-color: #ffffff; font-size: 1px; }',
-            'p{background-color:#ffffff;font-size:1px}',
+            'p{background-color:#fff;font-size:1px}',
         ];
         yield [
             'background-color: #FFFFFF ; ',
-            'background-color:#FFFFFF',
+            'background-color:#fff',
         ];
         yield [
             'background-color: #FFFFFF; font-size: 14px
             ;
             ',
-            'background-color:#FFFFFF;font-size:14px',
+            'background-color:#fff;font-size:14px',
         ];
     }
 
