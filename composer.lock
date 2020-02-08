@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4111da052f033476fe2885584da4a40c",
+    "content-hash": "9aed46ef70c5117ebeb2edb2a6acdbf3",
     "packages": [
         {
             "name": "jalle19/php-yui-compressor",
@@ -226,6 +226,138 @@
                 "yui"
             ],
             "time": "2013-09-13T10:26:14+00:00"
+        },
+        {
+            "name": "thecodingmachine/safe",
+            "version": "v0.1.16",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thecodingmachine/safe.git",
+                "reference": "4e8f840f0a0a2ea167813c3994a7fc527c3c2182"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/4e8f840f0a0a2ea167813c3994a7fc527c3c2182",
+                "reference": "4e8f840f0a0a2ea167813c3994a7fc527c3c2182",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.10.3",
+                "squizlabs/php_codesniffer": "^3.2",
+                "thecodingmachine/phpstan-strict-rules": "^0.10.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Safe\\": [
+                        "lib/",
+                        "generated/"
+                    ]
+                },
+                "files": [
+                    "generated/apache.php",
+                    "generated/apc.php",
+                    "generated/apcu.php",
+                    "generated/array.php",
+                    "generated/bzip2.php",
+                    "generated/classobj.php",
+                    "generated/com.php",
+                    "generated/cubrid.php",
+                    "generated/curl.php",
+                    "generated/datetime.php",
+                    "generated/dir.php",
+                    "generated/eio.php",
+                    "generated/errorfunc.php",
+                    "generated/exec.php",
+                    "generated/fileinfo.php",
+                    "generated/filesystem.php",
+                    "generated/filter.php",
+                    "generated/fpm.php",
+                    "generated/ftp.php",
+                    "generated/funchand.php",
+                    "generated/gmp.php",
+                    "generated/gnupg.php",
+                    "generated/hash.php",
+                    "generated/ibase.php",
+                    "generated/ibmDb2.php",
+                    "generated/iconv.php",
+                    "generated/image.php",
+                    "generated/imap.php",
+                    "generated/info.php",
+                    "generated/ingres-ii.php",
+                    "generated/inotify.php",
+                    "generated/json.php",
+                    "generated/ldap.php",
+                    "generated/libevent.php",
+                    "generated/libxml.php",
+                    "generated/lzf.php",
+                    "generated/mailparse.php",
+                    "generated/mbstring.php",
+                    "generated/misc.php",
+                    "generated/msql.php",
+                    "generated/mssql.php",
+                    "generated/mysql.php",
+                    "generated/mysqli.php",
+                    "generated/mysqlndMs.php",
+                    "generated/mysqlndQc.php",
+                    "generated/network.php",
+                    "generated/oci8.php",
+                    "generated/opcache.php",
+                    "generated/openssl.php",
+                    "generated/outcontrol.php",
+                    "generated/password.php",
+                    "generated/pcntl.php",
+                    "generated/pcre.php",
+                    "generated/pdf.php",
+                    "generated/pgsql.php",
+                    "generated/posix.php",
+                    "generated/ps.php",
+                    "generated/pspell.php",
+                    "generated/readline.php",
+                    "generated/rrd.php",
+                    "generated/sem.php",
+                    "generated/session.php",
+                    "generated/shmop.php",
+                    "generated/simplexml.php",
+                    "generated/sockets.php",
+                    "generated/sodium.php",
+                    "generated/solr.php",
+                    "generated/spl.php",
+                    "generated/sqlsrv.php",
+                    "generated/ssdeep.php",
+                    "generated/ssh2.php",
+                    "generated/stats.php",
+                    "generated/stream.php",
+                    "generated/strings.php",
+                    "generated/swoole.php",
+                    "generated/uodbc.php",
+                    "generated/uopz.php",
+                    "generated/url.php",
+                    "generated/var.php",
+                    "generated/xdiff.php",
+                    "generated/xml.php",
+                    "generated/xmlrpc.php",
+                    "generated/yaml.php",
+                    "generated/yaz.php",
+                    "generated/zip.php",
+                    "generated/zlib.php",
+                    "lib/special_cases.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
+            "time": "2019-06-25T08:45:33+00:00"
         },
         {
             "name": "websharks/css-minifier",
@@ -1416,16 +1548,16 @@
         },
         {
             "name": "jangregor/phpstan-prophecy",
-            "version": "0.3.0",
+            "version": "0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jan0707/phpstan-prophecy.git",
-                "reference": "a1bfe3c3920829d4004240fb68ed85ab6dd18b14"
+                "reference": "23301ff577da974e47e8670bf9313c885d306011"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/a1bfe3c3920829d4004240fb68ed85ab6dd18b14",
-                "reference": "a1bfe3c3920829d4004240fb68ed85ab6dd18b14",
+                "url": "https://api.github.com/repos/Jan0707/phpstan-prophecy/zipball/23301ff577da974e47e8670bf9313c885d306011",
+                "reference": "23301ff577da974e47e8670bf9313c885d306011",
                 "shasum": ""
             },
             "require": {
@@ -1433,15 +1565,23 @@
                 "phpstan/phpstan": "^0.10.0 || ^0.11.0"
             },
             "conflict": {
-                "phpspec/prophecy": "<1.7, >=2.0",
-                "phpunit/phpunit": "<6.0, >=8.0"
+                "phpspec/prophecy": "<1.7,>=2.0",
+                "phpunit/phpunit": "<6.0,>=9.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.13.1",
+                "friendsofphp/php-cs-fixer": "~2.15.0",
+                "localheinz/composer-normalize": "^1.1.3",
                 "phpspec/prophecy": "^1.7",
-                "phpunit/phpunit": "^6.0||^7.0"
+                "phpunit/phpunit": "^6.0 || ^7.0"
             },
-            "type": "library",
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "src/extension.neon"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "JanGregor\\Prophecy\\": "src/"
@@ -1458,7 +1598,7 @@
                 }
             ],
             "description": "Provides a phpstan/phpstan extension for phpspec/prophecy",
-            "time": "2019-01-18T13:44:45+00:00"
+            "time": "2019-07-31T13:51:23+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -1849,33 +1989,40 @@
         },
         {
             "name": "localheinz/phpstan-rules",
-            "version": "0.7.1",
+            "version": "0.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/localheinz/phpstan-rules.git",
-                "reference": "fbbd15c097cd76a42d525badfd5342cd3c7d36a5"
+                "reference": "eb5d1ae69a744b760dbc153a7bdc5a05877c7cc3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/fbbd15c097cd76a42d525badfd5342cd3c7d36a5",
-                "reference": "fbbd15c097cd76a42d525badfd5342cd3c7d36a5",
+                "url": "https://api.github.com/repos/localheinz/phpstan-rules/zipball/eb5d1ae69a744b760dbc153a7bdc5a05877c7cc3",
+                "reference": "eb5d1ae69a744b760dbc153a7bdc5a05877c7cc3",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.1.0",
                 "php": "^7.1",
-                "phpstan/phpstan": "~0.10.5 || ~0.11.0"
+                "phpstan/phpstan": "~0.11.7"
             },
             "require-dev": {
-                "infection/infection": "~0.11.5",
+                "infection/infection": "~0.12.2",
                 "localheinz/composer-normalize": "^1.1.1",
-                "localheinz/php-cs-fixer-config": "~1.19.0",
+                "localheinz/php-cs-fixer-config": "~1.21.0",
                 "localheinz/test-util": "~0.7.0",
-                "phpstan/phpstan-deprecation-rules": "~0.10.2 || ~0.11.0",
-                "phpstan/phpstan-strict-rules": "~0.10.1 || ~0.11.0",
-                "phpunit/phpunit": "^7.5.2"
+                "phpstan/phpstan-deprecation-rules": "~0.11.1",
+                "phpstan/phpstan-strict-rules": "~0.11.1",
+                "phpunit/phpunit": "^7.5.9"
             },
-            "type": "library",
+            "type": "phpstan-extension",
+            "extra": {
+                "phpstan": {
+                    "includes": [
+                        "rules.neon"
+                    ]
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Localheinz\\PHPStan\\Rules\\": "src/"
@@ -1898,7 +2045,7 @@
                 "phpstan-extreme-rules",
                 "phpstan-rules"
             ],
-            "time": "2019-01-17T22:24:11+00:00"
+            "time": "2019-05-22T20:35:17+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2899,27 +3046,28 @@
         },
         {
             "name": "pepakriz/phpstan-exception-rules",
-            "version": "v0.7.2",
+            "version": "v0.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pepakriz/phpstan-exception-rules.git",
-                "reference": "d15eba3400fe2665b634ac6c55f6c64ed1e7b408"
+                "reference": "db16cb7b14e637cec8844b7d870727132fecc5ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pepakriz/phpstan-exception-rules/zipball/d15eba3400fe2665b634ac6c55f6c64ed1e7b408",
-                "reference": "d15eba3400fe2665b634ac6c55f6c64ed1e7b408",
+                "url": "https://api.github.com/repos/pepakriz/phpstan-exception-rules/zipball/db16cb7b14e637cec8844b7d870727132fecc5ec",
+                "reference": "db16cb7b14e637cec8844b7d870727132fecc5ec",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1",
-                "phpstan/phpstan": "^0.11"
+                "phpstan/phpstan": "^0.11.7"
             },
             "require-dev": {
                 "cdn77/coding-standard": "^0.7.1",
                 "jakub-onderka/php-console-highlighter": "0.4.0",
                 "jakub-onderka/php-parallel-lint": "1.0.0",
                 "php-coveralls/php-coveralls": "^2.1",
+                "phpstan/phpstan": "^0.11.13",
                 "phpstan/phpstan-nette": "^0.11",
                 "phpstan/phpstan-phpunit": "^0.11",
                 "phpstan/phpstan-strict-rules": "^0.11",
@@ -2927,10 +3075,15 @@
                 "slevomat/coding-standard": "^4.8.3",
                 "squizlabs/php_codesniffer": "~3.4.0"
             },
-            "type": "library",
+            "type": "phpstan-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.7-dev"
+                    "dev-master": "0.8-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
                 }
             },
             "autoload": {
@@ -2943,7 +3096,7 @@
                 "MIT"
             ],
             "description": "Exception rules for PHPStan",
-            "time": "2019-04-16T15:47:42+00:00"
+            "time": "2019-08-17T10:24:29+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -5752,16 +5905,16 @@
         },
         {
             "name": "thecodingmachine/phpstan-safe-rule",
-            "version": "v0.1.3",
+            "version": "v0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/phpstan-safe-rule.git",
-                "reference": "00f4845905feb5240ca62fb799e3c51ba85c9230"
+                "reference": "70bfb6760b8165079d5e4a3feee9c057251cf56e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/phpstan-safe-rule/zipball/00f4845905feb5240ca62fb799e3c51ba85c9230",
-                "reference": "00f4845905feb5240ca62fb799e3c51ba85c9230",
+                "url": "https://api.github.com/repos/thecodingmachine/phpstan-safe-rule/zipball/70bfb6760b8165079d5e4a3feee9c057251cf56e",
+                "reference": "70bfb6760b8165079d5e4a3feee9c057251cf56e",
                 "shasum": ""
             },
             "require": {
@@ -5774,10 +5927,15 @@
                 "phpunit/phpunit": "^7.5.2",
                 "squizlabs/php_codesniffer": "^3.4"
             },
-            "type": "library",
+            "type": "phpstan-extension",
             "extra": {
                 "branch-alias": {
                     "dev-master": "0.1-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "phpstan-safe-rule.neon"
+                    ]
                 }
             },
             "autoload": {
@@ -5796,7 +5954,7 @@
                 }
             ],
             "description": "A PHPStan rule to detect safety issues. Must be used in conjunction with thecodingmachine/safe",
-            "time": "2019-03-07T13:52:42+00:00"
+            "time": "2019-07-15T07:34:24+00:00"
         },
         {
             "name": "thecodingmachine/phpstan-strict-rules",
@@ -5848,138 +6006,6 @@
             ],
             "description": "A set of additional rules for PHPStan based on best practices followed at TheCodingMachine",
             "time": "2019-06-08T20:09:55+00:00"
-        },
-        {
-            "name": "thecodingmachine/safe",
-            "version": "v0.1.16",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thecodingmachine/safe.git",
-                "reference": "4e8f840f0a0a2ea167813c3994a7fc527c3c2182"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/4e8f840f0a0a2ea167813c3994a7fc527c3c2182",
-                "reference": "4e8f840f0a0a2ea167813c3994a7fc527c3c2182",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^0.10.3",
-                "squizlabs/php_codesniffer": "^3.2",
-                "thecodingmachine/phpstan-strict-rules": "^0.10.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Safe\\": [
-                        "lib/",
-                        "generated/"
-                    ]
-                },
-                "files": [
-                    "generated/apache.php",
-                    "generated/apc.php",
-                    "generated/apcu.php",
-                    "generated/array.php",
-                    "generated/bzip2.php",
-                    "generated/classobj.php",
-                    "generated/com.php",
-                    "generated/cubrid.php",
-                    "generated/curl.php",
-                    "generated/datetime.php",
-                    "generated/dir.php",
-                    "generated/eio.php",
-                    "generated/errorfunc.php",
-                    "generated/exec.php",
-                    "generated/fileinfo.php",
-                    "generated/filesystem.php",
-                    "generated/filter.php",
-                    "generated/fpm.php",
-                    "generated/ftp.php",
-                    "generated/funchand.php",
-                    "generated/gmp.php",
-                    "generated/gnupg.php",
-                    "generated/hash.php",
-                    "generated/ibase.php",
-                    "generated/ibmDb2.php",
-                    "generated/iconv.php",
-                    "generated/image.php",
-                    "generated/imap.php",
-                    "generated/info.php",
-                    "generated/ingres-ii.php",
-                    "generated/inotify.php",
-                    "generated/json.php",
-                    "generated/ldap.php",
-                    "generated/libevent.php",
-                    "generated/libxml.php",
-                    "generated/lzf.php",
-                    "generated/mailparse.php",
-                    "generated/mbstring.php",
-                    "generated/misc.php",
-                    "generated/msql.php",
-                    "generated/mssql.php",
-                    "generated/mysql.php",
-                    "generated/mysqli.php",
-                    "generated/mysqlndMs.php",
-                    "generated/mysqlndQc.php",
-                    "generated/network.php",
-                    "generated/oci8.php",
-                    "generated/opcache.php",
-                    "generated/openssl.php",
-                    "generated/outcontrol.php",
-                    "generated/password.php",
-                    "generated/pcntl.php",
-                    "generated/pcre.php",
-                    "generated/pdf.php",
-                    "generated/pgsql.php",
-                    "generated/posix.php",
-                    "generated/ps.php",
-                    "generated/pspell.php",
-                    "generated/readline.php",
-                    "generated/rrd.php",
-                    "generated/sem.php",
-                    "generated/session.php",
-                    "generated/shmop.php",
-                    "generated/simplexml.php",
-                    "generated/sockets.php",
-                    "generated/sodium.php",
-                    "generated/solr.php",
-                    "generated/spl.php",
-                    "generated/sqlsrv.php",
-                    "generated/ssdeep.php",
-                    "generated/ssh2.php",
-                    "generated/stats.php",
-                    "generated/stream.php",
-                    "generated/strings.php",
-                    "generated/swoole.php",
-                    "generated/uodbc.php",
-                    "generated/uopz.php",
-                    "generated/url.php",
-                    "generated/var.php",
-                    "generated/xdiff.php",
-                    "generated/xml.php",
-                    "generated/xmlrpc.php",
-                    "generated/yaml.php",
-                    "generated/yaz.php",
-                    "generated/zip.php",
-                    "generated/zlib.php",
-                    "lib/special_cases.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
-            "time": "2019-06-25T08:45:33+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -6297,22 +6323,22 @@
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper.git",
-                "reference": "d582a3204b9842514a80cd4a8c55e4a69aae19f5"
+                "reference": "d476fac1d0b89e43cc493b07d7baf4128e29279f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/d582a3204b9842514a80cd4a8c55e4a69aae19f5",
-                "reference": "d582a3204b9842514a80cd4a8c55e4a69aae19f5",
+                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/d476fac1d0b89e43cc493b07d7baf4128e29279f",
+                "reference": "d476fac1d0b89e43cc493b07d7baf4128e29279f",
                 "shasum": ""
             },
             "require": {
-                "jangregor/phpstan-prophecy": "^0.3.0",
-                "localheinz/phpstan-rules": "^0.7.1",
-                "pepakriz/phpstan-exception-rules": "^0.7.0",
+                "jangregor/phpstan-prophecy": "^0.3.0 || ^0.4",
+                "localheinz/phpstan-rules": "^0.7.1 || ^0.8.0 || ^0.9.0 || ^0.10.0",
+                "pepakriz/phpstan-exception-rules": "^0.7.0 || ^0.8.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11.0",
                 "phpstan/phpstan-php-parser": "^0.11.0",
                 "phpstan/phpstan-phpunit": "^0.11.0",
@@ -6331,8 +6357,8 @@
                     "email": "ceesjank@gmail.com"
                 }
             ],
-            "description": "? PHPStan rules wrapper",
-            "time": "2019-03-16T14:53:23+00:00"
+            "description": "🌯 PHPStan rules wrapper",
+            "time": "2019-08-01T06:48:58+00:00"
         },
         {
             "name": "wyrihaximus/test-utilities",

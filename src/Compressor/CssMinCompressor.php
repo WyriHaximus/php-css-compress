@@ -3,6 +3,7 @@
 namespace WyriHaximus\CssCompress\Compressor;
 
 use WyriHaximus\Compress\CompressorInterface;
+use function Safe\substr;
 
 final class CssMinCompressor implements CompressorInterface
 {
@@ -38,6 +39,6 @@ final class CssMinCompressor implements CompressorInterface
             return $string;
         }
 
-        return \substr($minified, 5, -1);
+        return substr($minified, 5, -1);
     }
 }

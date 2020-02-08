@@ -20,7 +20,7 @@ final class YUICSSCompressor implements CompressorInterface
     {
         try {
             return $this->yui->compress($string);
-        } catch (\Exception $exception) {
+        } catch (\Throwable $exception) {
             return $string;
         }
     }

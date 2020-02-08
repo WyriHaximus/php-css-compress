@@ -10,7 +10,9 @@ return (function (): Config
         __DIR__ . DIRECTORY_SEPARATOR . 'tests',
     ];
 
-    return PhpCsFixerConfig::create()
+    return PhpCsFixerConfig::create()->setRules([
+        'native_function_invocation' => false,
+    ])
         ->setFinder(
             PhpCsFixer\Finder::create()
                 ->in($paths)
