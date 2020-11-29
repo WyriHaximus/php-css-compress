@@ -1,17 +1,18 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\CssCompress\Compressor;
 
 use tubalmartin\CssMin\Minifier as CSSmin;
 use WyriHaximus\Compress\CompressorInterface;
+
 use function Safe\substr;
+use function strpos;
 
 final class CssMinCompressor implements CompressorInterface
 {
-    /**
-     * @var CSSmin
-     */
-    private $cssMin;
+    private CSSmin $cssMin;
 
     public function __construct()
     {
@@ -21,7 +22,7 @@ final class CssMinCompressor implements CompressorInterface
     public function compress(string $string): string
     {
         // If there's no selector, this must be an inline CSS attribute.
-        if (\strpos($string, '{') === false) {
+        if (strpos($string, '{') === false) {
             return $this->minifyInline($string);
         }
 
@@ -31,7 +32,7 @@ final class CssMinCompressor implements CompressorInterface
     private function minifyInline(string $string): string
     {
         // Get CssMin to compress inline CSS by adding and stripping a selector.
-        $mock = 'body{' . $string . '}';
+        $mock     = 'body{' . $string . '}';
         $minified = $this->compress($mock);
 
         if ($minified === '') {

@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\CssCompress\Compressor;
 
@@ -7,9 +9,6 @@ use WyriHaximus\Compress\CompressorInterface;
 
 final class MMMCSSCompressor implements CompressorInterface
 {
-    /**
-     * {@inheritdoc}
-     */
     public function compress(string $string): string
     {
         /** @psalm-suppress TooManyArguments */
