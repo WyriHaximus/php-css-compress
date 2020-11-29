@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace WyriHaximus\CssCompress\Tests\Compressor;
 
@@ -9,27 +11,31 @@ use WyriHaximus\CssCompress\Compressor\CssMinifierCompressor;
 /**
  * CssMinifierCompressorTest.
  *
- * @author Marcel Voigt <mv@noch.so>
- *
  * @internal
  */
 final class CssMinifierCompressorTest extends AbstractCompressorTest
 {
+    /**
+     * @return iterable<array<string>>
+     */
     public function providerReturn(): iterable
     {
         yield [
             'p { background-color: #ffffff; font-size: 1px; }',
             'p{background-color: #FFF;font-size: 1px}',
         ];
+
         yield [
             '/* comments */
             p { background-color: #ffffff; font-size: 1px; }',
             'p{background-color: #FFF;font-size: 1px}',
         ];
+
         yield [
             'background-color: #FFFFFF ; ',
             'background-color: #FFF;',
         ];
+
         yield [
             'background-color: #FFFFFF; font-size: 14px
             ;
@@ -40,10 +46,8 @@ final class CssMinifierCompressorTest extends AbstractCompressorTest
 
     /**
      * @dataProvider providerReturn
-     * @param mixed $input
-     * @param mixed $expected
      */
-    public function testReturn($input, $expected): void
+    public function testReturn(string $input, string $expected): void
     {
         $actual = $this->compressor->compress($input);
         self::assertSame($expected, $actual);

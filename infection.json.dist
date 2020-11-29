@@ -10,28 +10,7 @@
     },
      "mutators": {
          "@default": true,
-         "ArrayItemRemoval": {
-             "ignore": [
-                 "WyriHaximus\\CssCompress\\Factory::construct",
-                 "WyriHaximus\\CssCompress\\Factory::constructSmallest"
-             ]
-         },
-         "CastString": {
-             "ignore": [
-                 "WyriHaximus\\CssCompress\\Compressor\\CssMinifierCompressor::compress"
-             ]
-         },
-         "Identical": {
-             "ignore": [
-                 "WyriHaximus\\CssCompress\\Compressor\\CssMinCompressor::compress"
-             ]
-         },
-         "LogicalAnd": {
-             "ignore": [
-                 "WyriHaximus\\CssCompress\\Compressor\\CssMinCompressor::compress"
-             ]
-         },
-         "TrueValue": {
+         "Ternary": {
              "ignore": [
                  "WyriHaximus\\CssCompress\\Factory::constructSmallest"
              ]
