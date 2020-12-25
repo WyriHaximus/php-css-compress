@@ -23,6 +23,9 @@
         "wyrihaximus/compress": "^1.1",
         "wyrihaximus/constants": "^1.6"
     },
+    "conflict": {
+        "matthiasmullie/minify": "1.3.64"
+    },
     "require-dev": {
         "wyrihaximus/test-utilities": "^3.3.1"
     },
