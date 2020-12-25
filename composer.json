@@ -21,6 +21,7 @@
         "tubalmartin/cssmin": "^4.1",
         "websharks/css-minifier": "150820",
         "wyrihaximus/compress": "^1.1",
+        "wyrihaximus/compress-contracts": "^1.0",
         "wyrihaximus/constants": "^1.6"
     },
     "conflict": {
