@@ -10,9 +10,6 @@ use WyriHaximus\Compress\SmallestResultCompressor;
 use WyriHaximus\CssCompress\Compressor\CssMinCompressor;
 use WyriHaximus\CssCompress\Compressor\CssMinifierCompressor;
 use WyriHaximus\CssCompress\Compressor\MMMCSSCompressor;
-use WyriHaximus\CssCompress\Compressor\YUICSSCompressor;
-
-use const WyriHaximus\Constants\Boolean\TRUE_;
 
 final class Factory
 {
@@ -21,16 +18,12 @@ final class Factory
         return new CssMinCompressor();
     }
 
-    /**
-     * @param  bool $externalCompressors When set to false only use pure PHP compressors.
-     */
-    public static function constructSmallest(bool $externalCompressors = TRUE_): CompressorInterface
+    public static function constructSmallest(): CompressorInterface
     {
         return new SmallestResultCompressor(
             new MMMCSSCompressor(),
             new CssMinCompressor(),
             new CssMinifierCompressor(),
-            $externalCompressors ? new YUICSSCompressor() : new ReturnCompressor(),
             new ReturnCompressor()
         );
     }
