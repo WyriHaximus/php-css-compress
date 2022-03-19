@@ -19,7 +19,7 @@ else
 	DOCKER_RUN=docker run --rm -it \
 		-v "`pwd`:`pwd`" \
 		-w "`pwd`" \
-		"wyrihaximusnet/php:7.4-nts-alpine3.12-dev"
+		"wyrihaximusnet/php:8.0-nts-alpine-slim-dev"
 endif
 
 all: lint cs-fix cs stan psalm unit infection composer-require-checker composer-unused
@@ -52,4 +52,4 @@ composer-require-checker:
 	$(DOCKER_RUN) vendor/bin/composer-require-checker --ignore-parse-errors --ansi -vvv --config-file=composer-require-checker.json
 
 composer-unused:
-	$(DOCKER_RUN) composer unused --ansi
+	$(DOCKER_RUN) vendor/bin/composer-unused --ansi

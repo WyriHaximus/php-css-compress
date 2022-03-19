@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [7.4, "8.0"]
+        php: ["8.0", 8.1]
         composer: [lowest, current, highest]
     runs-on: ubuntu-latest
     container:
@@ -32,7 +32,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [7.4, "8.0"]
+        php: ["8.0", 8.1]
         composer: [lowest, current, highest]
         qa: [lint, cs, stan, psalm, unit, infection, composer-require-checker, composer-unused]
     needs: composer-install
