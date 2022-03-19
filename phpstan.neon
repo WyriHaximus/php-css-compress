@@ -1,7 +1,7 @@
 parameters:
 	ergebnis:
 		classesAllowedToBeExtended:
-			- WyriHaximus\Compress\AbstractCompressorTest
+			- WyriHaximus\Compress\TestUtilities\AbstractCompressorTest
 
 includes:
 	- vendor/wyrihaximus/test-utilities/rules.neon
