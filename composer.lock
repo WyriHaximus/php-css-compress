@@ -2272,16 +2272,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.1",
+            "version": "7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79"
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
@@ -2376,7 +2376,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
             },
             "funding": [
                 {
@@ -2392,7 +2392,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-06T18:43:05+00:00"
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2480,16 +2480,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -2513,7 +2513,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -2575,7 +2575,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -2591,25 +2591,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "icanhazstring/composer-unused",
-            "version": "0.8.1",
+            "version": "0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer-unused/composer-unused.git",
-                "reference": "4e49276c9682ea32b9c4cf6186185c7c69b7ffd6"
+                "reference": "a86c29b51d41ed0087085c36cd9948d9952cd9cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer-unused/composer-unused/zipball/4e49276c9682ea32b9c4cf6186185c7c69b7ffd6",
-                "reference": "4e49276c9682ea32b9c4cf6186185c7c69b7ffd6",
+                "url": "https://api.github.com/repos/composer-unused/composer-unused/zipball/a86c29b51d41ed0087085c36cd9948d9952cd9cf",
+                "reference": "a86c29b51d41ed0087085c36cd9948d9952cd9cf",
                 "shasum": ""
             },
             "require": {
                 "composer-unused/contracts": "^0.2",
-                "composer-unused/symbol-parser": "^0.1.7",
+                "composer-unused/symbol-parser": "^0.1.8",
                 "nikic/php-parser": "^4.13",
                 "ondram/ci-detector": "^4.1",
                 "php": "^7.4 || ^8.0",
@@ -2629,7 +2629,7 @@
                 "jangregor/phpstan-prophecy": "^0.8.1",
                 "phpspec/prophecy-phpunit": "^2.0.1",
                 "phpstan/phpstan": "^0.12.99",
-                "phpunit/phpunit": "^9.5.13",
+                "phpunit/phpunit": "^9.5.19",
                 "roave/security-advisories": "dev-master",
                 "squizlabs/php_codesniffer": "^3.6"
             },
@@ -2673,7 +2673,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2022-02-15T20:22:44+00:00"
+            "time": "2022-03-16T06:01:46+00:00"
         },
         {
             "name": "infection/abstract-testframework-adapter",
@@ -9287,22 +9287,22 @@
         },
         {
             "name": "wyrihaximus/coding-standard",
-            "version": "2.8.0",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-coding-standard.git",
-                "reference": "c3af51ffec5ef372d4bbdf6d6efb5c9c05658a7f"
+                "reference": "ec3e0f983185c00022211373d67bd390e82d2387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-coding-standard/zipball/c3af51ffec5ef372d4bbdf6d6efb5c9c05658a7f",
-                "reference": "c3af51ffec5ef372d4bbdf6d6efb5c9c05658a7f",
+                "url": "https://api.github.com/repos/WyriHaximus/php-coding-standard/zipball/ec3e0f983185c00022211373d67bd390e82d2387",
+                "reference": "ec3e0f983185c00022211373d67bd390e82d2387",
                 "shasum": ""
             },
             "require": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
                 "doctrine/coding-standard": "^9.0.0",
-                "php": "^8 || ^7.4",
+                "php": "^8",
                 "slevomat/coding-standard": "^7.0.14",
                 "squizlabs/php_codesniffer": "^3.6.0"
             },
@@ -9314,7 +9314,7 @@
             "description": "WyriHaximus Coding Standard",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-coding-standard/issues",
-                "source": "https://github.com/WyriHaximus/php-coding-standard/tree/2.8.0"
+                "source": "https://github.com/WyriHaximus/php-coding-standard/tree/2.9.0"
             },
             "funding": [
                 {
@@ -9322,7 +9322,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-08T07:19:19+00:00"
+            "time": "2022-03-21T10:33:22+00:00"
         },
         {
             "name": "wyrihaximus/compress-test-utilities",
@@ -9378,22 +9378,23 @@
         },
         {
             "name": "wyrihaximus/phpstan-rules-wrapper",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper.git",
-                "reference": "390fa67de84fbb73f21e6506425eaf4ba40be109"
+                "reference": "e980c8991836df501eda69eb8276ec6416508b04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/390fa67de84fbb73f21e6506425eaf4ba40be109",
-                "reference": "390fa67de84fbb73f21e6506425eaf4ba40be109",
+                "url": "https://api.github.com/repos/WyriHaximus/php-phpstan-rules-wrapper/zipball/e980c8991836df501eda69eb8276ec6416508b04",
+                "reference": "e980c8991836df501eda69eb8276ec6416508b04",
                 "shasum": ""
             },
             "require": {
                 "ergebnis/phpstan-rules": "^1.0",
                 "jangregor/phpstan-prophecy": "^1.0",
                 "pepakriz/phpstan-exception-rules": "^0.12.0",
+                "php": "^8",
                 "phpstan/phpstan-deprecation-rules": "^1.0",
                 "phpstan/phpstan-php-parser": "^1.1",
                 "phpstan/phpstan-phpunit": "^1.0",
@@ -9415,7 +9416,7 @@
             "description": "🌯 PHPStan rules wrapper",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/issues",
-                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/2.0.1"
+                "source": "https://github.com/WyriHaximus/php-phpstan-rules-wrapper/tree/2.1.0"
             },
             "funding": [
                 {
@@ -9423,24 +9424,24 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-17T23:24:30+00:00"
+            "time": "2022-03-21T09:41:34+00:00"
         },
         {
             "name": "wyrihaximus/test-utilities",
-            "version": "5.0.4",
+            "version": "5.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/php-test-utilities.git",
-                "reference": "57752cbb84370ec4b59bb4919b3eb084485bba2e"
+                "reference": "4f58ea4726fa73433e9415367a4e9b908226f0d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/57752cbb84370ec4b59bb4919b3eb084485bba2e",
-                "reference": "57752cbb84370ec4b59bb4919b3eb084485bba2e",
+                "url": "https://api.github.com/repos/WyriHaximus/php-test-utilities/zipball/4f58ea4726fa73433e9415367a4e9b908226f0d4",
+                "reference": "4f58ea4726fa73433e9415367a4e9b908226f0d4",
                 "shasum": ""
             },
             "require": {
-                "ergebnis/composer-normalize": "^2.23.1",
+                "ergebnis/composer-normalize": "^2.24.1",
                 "icanhazstring/composer-unused": "^0.8.1",
                 "infection/infection": "^0.26.5",
                 "jakobbuis/simple-slow-test-reporter": "^1.0",
@@ -9454,8 +9455,8 @@
                 "php-standard-library/psalm-plugin": "^1.1",
                 "phpspec/prophecy": "^1.15",
                 "phpspec/prophecy-phpunit": "^2.0.1",
-                "phpstan/phpstan": "^1.4.9",
-                "phpunit/phpunit": "^9.5.18",
+                "phpstan/phpstan": "^1.4.10",
+                "phpunit/phpunit": "^9.5.19",
                 "psalm/plugin-phpunit": "^0.16.1",
                 "roave/backward-compatibility-check": "^6",
                 "roave/infection-static-analysis-plugin": "^1.18.0",
@@ -9506,7 +9507,7 @@
             "description": "🛠️ Test utilities for api-clients packages",
             "support": {
                 "issues": "https://github.com/WyriHaximus/php-test-utilities/issues",
-                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.0.4"
+                "source": "https://github.com/WyriHaximus/php-test-utilities/tree/5.0.5"
             },
             "funding": [
                 {
@@ -9514,7 +9515,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-11T22:14:08+00:00"
+            "time": "2022-03-20T21:05:43+00:00"
         }
     ],
     "aliases": [],
