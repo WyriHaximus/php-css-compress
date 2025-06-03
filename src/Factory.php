@@ -24,7 +24,7 @@ final class Factory
             new MMMCSSCompressor(),
             new CssMinCompressor(),
             new CssMinifierCompressor(),
-            new ReturnCompressor()
+            new ReturnCompressor(),
         );
     }
 }
