@@ -4,21 +4,15 @@ declare(strict_types=1);
 
 namespace WyriHaximus\CssCompress\Tests\Compressor;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use WyriHaximus\Compress\CompressorInterface;
 use WyriHaximus\Compress\TestUtilities\AbstractCompressorTest;
 use WyriHaximus\CssCompress\Compressor\CssMinifierCompressor;
 
-/**
- * CssMinifierCompressorTest.
- *
- * @internal
- */
 final class CssMinifierCompressorTest extends AbstractCompressorTest
 {
-    /**
-     * @return iterable<array<string>>
-     */
-    public function providerReturn(): iterable
+    /** @return iterable<array<string>> */
+    public static function providerReturn(): iterable
     {
         yield [
             'p { background-color: #ffffff; font-size: 1px; }',
@@ -44,9 +38,7 @@ final class CssMinifierCompressorTest extends AbstractCompressorTest
         ];
     }
 
-    /**
-     * @dataProvider providerReturn
-     */
+    #[DataProvider('providerReturn')]
     public function testReturn(string $input, string $expected): void
     {
         $actual = $this->compressor->compress($input);

@@ -12,12 +12,12 @@ CssCompress
 To install via [Composer](http://getcomposer.org/), use the command below, it will automatically detect the latest version and bind it with `~`.
 
 ```
-composer require wyrihaximus/css-compress 
+composer require wyrihaximus/css-compress
 ```
 
 ## License ##
 
-Copyright 2019 [Cees-Jan Kiewiet](http://wyrihaximus.net/)
+Copyright 2025 [Cees-Jan Kiewiet](http://wyrihaximus.net/)
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation

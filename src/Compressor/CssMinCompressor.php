@@ -7,10 +7,10 @@ namespace WyriHaximus\CssCompress\Compressor;
 use tubalmartin\CssMin\Minifier as CSSmin;
 use WyriHaximus\Compress\CompressorInterface;
 
-use function Safe\substr;
-use function strpos;
+use function str_contains;
+use function substr;
 
-final class CssMinCompressor implements CompressorInterface
+final readonly class CssMinCompressor implements CompressorInterface
 {
     private CSSmin $cssMin;
 
@@ -22,7 +22,7 @@ final class CssMinCompressor implements CompressorInterface
     public function compress(string $string): string
     {
         // If there's no selector, this must be an inline CSS attribute.
-        if (strpos($string, '{') === false) {
+        if (! str_contains($string, '{')) {
             return $this->minifyInline($string);
         }
 

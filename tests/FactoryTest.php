@@ -7,9 +7,6 @@ namespace WyriHaximus\CssCompress\Tests;
 use WyriHaximus\CssCompress\Factory;
 use WyriHaximus\TestUtilities\TestCase;
 
-/**
- * @internal
- */
 final class FactoryTest extends TestCase
 {
     public function testConstruct(): void
@@ -19,8 +16,8 @@ final class FactoryTest extends TestCase
         self::assertSame(
             'background-color:#fff',
             $compressor->compress(
-                'background-color: #ffffff;'
-            )
+                'background-color: #ffffff;',
+            ),
         );
     }
 
@@ -31,8 +28,8 @@ final class FactoryTest extends TestCase
         self::assertSame(
             'background-color:#fff',
             $compressor->compress(
-                'background-color: #ffffff;'
-            )
+                'background-color: #ffffff;',
+            ),
         );
     }
 
@@ -43,8 +40,8 @@ final class FactoryTest extends TestCase
         self::assertSame(
             '--a:1em;padding:var(--a);color:blue',
             $compressor->compress(
-                '--a: 1em;   padding: var(--a); color: blue;'
-            )
+                '--a: 1em;   padding: var(--a); color: blue;',
+            ),
         );
     }
 }
