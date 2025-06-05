@@ -10,6 +10,7 @@ use WyriHaximus\Compress\SmallestResultCompressor;
 use WyriHaximus\CssCompress\Compressor\CssMinCompressor;
 use WyriHaximus\CssCompress\Compressor\CssMinifierCompressor;
 use WyriHaximus\CssCompress\Compressor\MMMCSSCompressor;
+use WyriHaximus\CssCompress\Compressor\WikiMediaMinifyCompressor;
 
 final class Factory
 {
@@ -24,6 +25,7 @@ final class Factory
             new MMMCSSCompressor(),
             new CssMinCompressor(),
             new CssMinifierCompressor(),
+            new WikiMediaMinifyCompressor(),
             new ReturnCompressor(),
         );
     }
