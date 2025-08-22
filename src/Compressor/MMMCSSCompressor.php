@@ -11,7 +11,6 @@ final class MMMCSSCompressor implements CompressorInterface
 {
     public function compress(string $string): string
     {
-        /** @psalm-suppress TooManyArguments */
-        return (new CSS($string))->minify();
+        return new CSS($string)->minify();
     }
 }
