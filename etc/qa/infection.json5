@@ -10,7 +10,7 @@
         "summary": "./var/infection-summary.log",
         "json": "./var/infection.json",
         "perMutator": "./var/infection-per-mutator.md",
-        "github": true
+        "github": "1"
     },
     "minMsi": 100,
     "minCoveredMsi": 100,
@@ -18,8 +18,5 @@
     "mutators": {
         "@default": true,
         "ReturnRemoval": false
-    },
-    "phpUnit": {
-        "configDir": "./etc/qa/"
     }
 }
