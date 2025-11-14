@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace WyriHaximus\CssCompress\Tests\Compressor;
 
 use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use WyriHaximus\Compress\CompressorInterface;
 use WyriHaximus\Compress\TestUtilities\AbstractCompressorTest;
 use WyriHaximus\CssCompress\Compressor\CssMinifierCompressor;
@@ -39,7 +40,8 @@ final class CssMinifierCompressorTest extends AbstractCompressorTest
     }
 
     #[DataProvider('providerReturn')]
-    public function testReturn(string $input, string $expected): void
+    #[Test]
+    public function return(string $input, string $expected): void
     {
         $actual = $this->compressor->compress($input);
         self::assertSame($expected, $actual);
