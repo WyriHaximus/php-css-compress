@@ -13,7 +13,6 @@ final class CssMinifierCompressor implements CompressorInterface
 {
     public function compress(string $string): string
     {
-        /** @psalm-suppress MixedAssignment */
         $result = Core::compress($string);
 
         if (is_string($result)) {
