@@ -12,6 +12,7 @@ use WyriHaximus\CssCompress\Compressor\CssMinifierCompressor;
 use WyriHaximus\CssCompress\Compressor\MMMCSSCompressor;
 use WyriHaximus\CssCompress\Compressor\WikiMediaMinifyCompressor;
 
+/** @api */
 final class Factory
 {
     public static function construct(): CompressorInterface
