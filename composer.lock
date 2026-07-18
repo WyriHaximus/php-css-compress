@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "43fe5bbf07e2328546b6ff4b5e63b665",
+    "content-hash": "1d4f2c49fae76d92e160ab5726b223c3",
     "packages": [
         {
             "name": "matthiasmullie/minify",
@@ -9569,16 +9569,16 @@
         },
         {
             "name": "wyrihaximus/makefiles",
-            "version": "0.12.3",
+            "version": "0.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WyriHaximus/Makefiles.git",
-                "reference": "cbb98ce358e8886a3c5d982b01fc478677ba8ef2"
+                "reference": "397bbca157ee57314683118389f0050ade3f6f0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WyriHaximus/Makefiles/zipball/cbb98ce358e8886a3c5d982b01fc478677ba8ef2",
-                "reference": "cbb98ce358e8886a3c5d982b01fc478677ba8ef2",
+                "url": "https://api.github.com/repos/WyriHaximus/Makefiles/zipball/397bbca157ee57314683118389f0050ade3f6f0d",
+                "reference": "397bbca157ee57314683118389f0050ade3f6f0d",
                 "shasum": ""
             },
             "require": {
@@ -9619,7 +9619,7 @@
             "description": "🧱 Makefile building blocks",
             "support": {
                 "issues": "https://github.com/WyriHaximus/Makefiles/issues",
-                "source": "https://github.com/WyriHaximus/Makefiles/tree/0.12.3"
+                "source": "https://github.com/WyriHaximus/Makefiles/tree/0.13.1"
             },
             "funding": [
                 {
@@ -9627,7 +9627,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-02T10:01:48+00:00"
+            "time": "2026-07-18T11:09:46+00:00"
         },
         {
             "name": "wyrihaximus/phpstan-no-safe",
