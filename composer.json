@@ -24,7 +24,7 @@
   },
   "require-dev": {
     "wyrihaximus/compress-test-utilities": "^4.0.0",
-    "wyrihaximus/makefiles": "^0.13.1"
+    "wyrihaximus/makefiles": "^0.13.2"
   },
   "conflict": {
     "matthiasmullie/minify": "1.3.64"
