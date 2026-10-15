@@ -18,5 +18,6 @@
     "mutators": {
         "@default": true,
         "ReturnRemoval": false
-    }
+    },
+    "threads": 64
 }
